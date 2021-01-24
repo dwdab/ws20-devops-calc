@@ -23,11 +23,11 @@ function calculateSetOperation() {
     case '-':
       result = subtraction(operand1, operand2);
       break;
+      case '*':
+        result = multiplication(operand1, operand2);
+        break;
     /*
-    case '*':
-      result = multiplication(operand1, operand2);
-      break;
-      case '/':
+        case '/':
         result = division(operand1, operand2);
         break;
     */
@@ -52,12 +52,12 @@ function subtraction(x, y) {
   return x - y;
 }
 
-/*
 // performs a multiplication of two parameters
 function multiplication(x,y) {
   return x * y;
 }
 
+/*
 // performs a division of first parameters by the second one
 function division(x,y) {
   return x / y;
