@@ -4,7 +4,7 @@ Die umgekehrte polnische Notation (UPN) oder reverse polnische Notation englisch
 
 ### Anforderungen
 
-Zum Ausführen dieses Javascripts wird *NodeJS* benötigt !
+Zum Ausführen dieses Javascripts wird **NodeJS** benötigt !
 
 ### Unterstützte Operatoren
 
