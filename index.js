@@ -2,12 +2,12 @@
  * Reverse Polish Notation Calculator
  */
 
-var arguments = process.argv.slice(2);
+let arguments = process.argv.slice(2);
 
-var operand1 = toNumber(arguments[0], 10);
-var operand2 = toNumber(arguments[1], 10);
-var operator = arguments[2];
-var result = 0;
+let operand1 = parseInt(arguments[0], 10);
+let operand2 = parseInt(arguments[1], 10);
+let operator = arguments[2];
+let result = 0;
 
 console.log('Calculating:', operand1, operand2, operator);
 
@@ -15,7 +15,6 @@ calculateSetOperation();
 
 // selects the correct case and performs the correct calculation depending on the operands
 function calculateSetOperation() {
-
   switch (operator) {
     case '+':
       result = addition(operand1, operand2);
@@ -23,17 +22,20 @@ function calculateSetOperation() {
     case '-':
       result = subtraction(operand1, operand2);
       break;
-    /*
     case '*':
-      result = multiplication(operand1, operand2);
+      result = operand1 * operand2;
       break;
-      case '/':
-        result = division(operand1, operand2);
-        break;
-    */
+    case '/':
+      result = operand1 / operand2;
+      break;
+    case 'p':
+      result = Math.pow(operand1, operand2);
+      break;
     default:
-      console.error('Not implemented:', operator);
+      console.error('Not implemented or is not a mathematical operator:', operator);
+      console.log('Supported operators are: + , - , / , * , p (power).');
   }
+
   console.log(result);
 }
 
