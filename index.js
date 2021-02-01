@@ -39,11 +39,6 @@ function calculateSetOperation() {
   console.log(result);
 }
 
-// returns the parsing from a string to a number
-function toNumber(x) {
-  return parseInt(x, 10);
-}
-
 // performs an addition of two parameters
 function addition(x, y) {
   return x + y;
