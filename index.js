@@ -26,7 +26,7 @@ function calculateSetOperation() {
       result = multiplication(operand1, operand2);
       break;
     case '/':
-      result = operand1 / operand2;
+      result = divison(operand1, operand2);
       break;
     case 'p':
       result = Math.pow(operand1, operand2);
@@ -54,9 +54,8 @@ function multiplication(x,y) {
   return x * y;
 }
 
-/*
 // performs a division of first parameters by the second one
 function division(x,y) {
   return x / y;
 }
-*/
+
