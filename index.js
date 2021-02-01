@@ -26,7 +26,7 @@ function calculateSetOperation() {
       result = multiplication(operand1, operand2);
       break;
     case '/':
-      result = divison(operand1, operand2);
+      result = division(operand1, operand2);
       break;
     case 'p':
       result = Math.pow(operand1, operand2);
