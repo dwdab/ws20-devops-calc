@@ -4,8 +4,8 @@
 
 let arguments = process.argv.slice(2);
 
-let operand1 = parseInt(arguments[0], 10);
-let operand2 = parseInt(arguments[1], 10);
+let operand1 = Number(arguments[0]);
+let operand2 = Number(arguments[1]);
 let operator = arguments[2];
 let result = 0;
 
