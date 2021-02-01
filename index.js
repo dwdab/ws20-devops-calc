@@ -23,7 +23,7 @@ function calculateSetOperation() {
       result = subtraction(operand1, operand2);
       break;
     case '*':
-      result = operand1 * operand2;
+      result = multiplication(operand1, operand2);
       break;
     case '/':
       result = operand1 / operand2;
@@ -54,12 +54,12 @@ function subtraction(x, y) {
   return x - y;
 }
 
-/*
 // performs a multiplication of two parameters
 function multiplication(x,y) {
   return x * y;
 }
 
+/*
 // performs a division of first parameters by the second one
 function division(x,y) {
   return x / y;
