@@ -13,4 +13,5 @@ Zum Ausführen dieses Javascripts wird **NodeJS** benötigt !
   - Multiplikation (*)
   - Division (/)
   - Potenz (p)
+  - Modulo (%)
   
