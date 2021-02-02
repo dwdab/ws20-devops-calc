@@ -2,6 +2,7 @@ const addition = require('./operations/addition');
 const multiplication = require('./operations/multiplication');
 const division = require('./operations/division');
 const modulo = require('./operations/modulo');
+const power = require('./operations/power')
 
 /**
  * Reverse Polish Notation Calculator
@@ -50,8 +51,4 @@ function calculateSetOperation() {
 // performs a subtraction of the second parameter from the first one.
 function subtraction(x, y) {
   return x - y;
-}
-
-function power(x, y) {
-  return x**y;
 }
