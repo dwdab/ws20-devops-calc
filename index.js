@@ -29,11 +29,14 @@ function calculateSetOperation() {
       result = division(operand1, operand2);
       break;
     case 'p':
-      result = Math.pow(operand1, operand2);
+      result = power(operand1, operand2);
+      break;
+    case '%':
+      result = modulo(operand1, operand2);
       break;
     default:
       console.error('Not implemented or is not a mathematical operator:', operator);
-      console.log('Supported operators are: + , - , / , * , p (power).');
+      console.log('Supported operators are: + , - , / , * , p (power) and % (modulo).');
   }
 
   console.log(result);
@@ -50,12 +53,20 @@ function subtraction(x, y) {
 }
 
 // performs a multiplication of two parameters
-function multiplication(x,y) {
+function multiplication(x, y) {
   return x * y;
 }
 
 // performs a division of first parameters by the second one
-function division(x,y) {
+function division(x, y) {
   return x / y;
 }
 
+function power(x, y) {
+  return x**y;
+}
+
+// performs a division of the two operators and returns the remainder
+function modulo(x, y) {
+  return x % y;
+}
