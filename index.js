@@ -1,8 +1,11 @@
 const addition = require('./operations/addition');
-const multiplication = require('./operations/multiplication');
-const division = require('./operations/division');
-const modulo = require('./operations/modulo');
-const power = require('./operations/power')
+// TODO: subtraction - Stefan
+const multiplication = require('./operations/multiplication'); // TODO: Erdem
+const division = require('./operations/division'); // TODO: Sascha
+const modulo = require('./operations/modulo'); // TODO: Steen
+const power = require('./operations/power'); // TODO: Kevin
+
+const operations = [addition];
 
 /**
  * Reverse Polish Notation Calculator
@@ -13,7 +16,7 @@ let arguments = process.argv.slice(2);
 let operand1 = Number(arguments[0]);
 let operand2 = Number(arguments[1]);
 let operator = arguments[2];
-let result = 0;
+let result = null;
 
 console.log('Calculating:', operand1, operand2, operator);
 
@@ -22,9 +25,6 @@ calculateSetOperation();
 // selects the correct case and performs the correct calculation depending on the operands
 function calculateSetOperation() {
   switch (operator) {
-    case '+':
-      result = addition(operand1, operand2);
-      break;
     case '-':
       result = subtraction(operand1, operand2);
       break;
@@ -40,12 +40,20 @@ function calculateSetOperation() {
     case '%':
       result = modulo(operand1, operand2);
       break;
-    default:
-      console.error('Not implemented or is not a mathematical operator:', operator);
-      console.log('Supported operators are: + , - , / , * , p (power) and % (modulo).');
   }
 
-  console.log(result);
+  const operation = operations.find((e) => e.operator === operator);
+
+  if (operation) {
+    result = operation.fn(operand1, operand2);
+  }
+
+  if (result === null) {
+    console.error('Not implemented or is not a mathematical operator:', operator);
+    console.log('Supported operators are: + , - , / , * , p (power) and % (modulo).');
+  } else {
+    console.log('Result=', result);
+  }
 }
 
 // performs a subtraction of the second parameter from the first one.

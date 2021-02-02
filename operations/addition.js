@@ -1,4 +1,5 @@
 // performs an addition of two parameters
-module.exports = function addition(x, y) {
-  return x + y;
+module.exports = {
+  operator: '+',
+  fn: (x, y) => x + y,
 };
