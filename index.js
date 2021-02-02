@@ -1,4 +1,5 @@
 const addition = require('./operations/addition');
+const multiplication = require('./operations/multiplication');
 const division = require('./operations/division');
 const modulo = require('./operations/modulo');
 
@@ -51,12 +52,6 @@ function subtraction(x, y) {
   return x - y;
 }
 
-// performs a multiplication of two parameters
-function multiplication(x, y) {
-  return x * y;
-}
-
 function power(x, y) {
   return x**y;
 }
-
