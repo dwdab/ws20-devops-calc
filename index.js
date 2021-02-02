@@ -45,26 +45,3 @@ function calculateSetOperation() {
   console.log(result);
 }
 
-// performs a subtraction of the second parameter from the first one.
-function subtraction(x, y) {
-  return x - y;
-}
-
-// performs a multiplication of two parameters
-function multiplication(x, y) {
-  return x * y;
-}
-
-// performs a division of first parameters by the second one
-function division(x, y) {
-  return x / y;
-}
-
-function power(x, y) {
-  return x**y;
-}
-
-// performs a division of the two operators and returns the remainder
-function modulo(x, y) {
-  return x % y;
-}
