@@ -1,4 +1,5 @@
 const addition = require('./operations/addition');
+const division = require('./operations/division');
 
 /**
  * Reverse Polish Notation Calculator
