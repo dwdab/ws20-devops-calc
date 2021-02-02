@@ -52,8 +52,3 @@ function calculateSetOperation() {
 function subtraction(x, y) {
   return x - y;
 }
-
-// performs a division of first parameters by the second one
-function division(x, y) {
-  return x / y;
-}
