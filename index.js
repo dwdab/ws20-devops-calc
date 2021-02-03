@@ -2,10 +2,10 @@ const addition = require('./operations/addition');
 // TODO: subtraction - Stefan
 const multiplication = require('./operations/multiplication'); // TODO: Erdem
 const division = require('./operations/division'); // TODO: Sascha
-const modulo = require('./operations/modulo'); // TODO: Steen
+const modulo = require('./operations/modulo');
 const power = require('./operations/power'); // TODO: Kevin
 
-const operations = [addition];
+const operations = [addition, modulo];
 
 /**
  * Reverse Polish Notation Calculator
@@ -37,9 +37,6 @@ function calculateSetOperation() {
     case 'p':
       result = power(operand1, operand2);
       break;
-    case '%':
-      result = modulo(operand1, operand2);
-      break;
   }
 
   const operation = operations.find((e) => e.operator === operator);
@@ -52,7 +49,7 @@ function calculateSetOperation() {
     console.error('Not implemented or is not a mathematical operator:', operator);
     console.log('Supported operators are: + , - , / , * , p (power) and % (modulo).');
   } else {
-    console.log('Result=', result);
+    console.log('Result:', result);
   }
 }
 
