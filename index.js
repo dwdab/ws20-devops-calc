@@ -1,11 +1,11 @@
 const addition = require('./operations/addition');
 const subtraction = require('./operations/subtraction');
 const multiplication = require('./operations/multiplication'); // TODO: Erdem
-const division = require('./operations/division'); // TODO: Sascha
+const division = require('./operations/division');
 const modulo = require('./operations/modulo'); // TODO: Steen
 const power = require('./operations/power'); // TODO: Kevin
 
-const operations = [addition, subtraction];
+const operations = [addition, subtraction, division];
 
 /**
  * Reverse Polish Notation Calculator
@@ -27,9 +27,6 @@ function calculateSetOperation() {
   switch (operator) {
     case '*':
       result = multiplication(operand1, operand2);
-      break;
-    case '/':
-      result = division(operand1, operand2);
       break;
     case 'p':
       result = power(operand1, operand2);
