@@ -28,9 +28,6 @@ function calculateSetOperation() {
     case '*':
       result = multiplication(operand1, operand2);
       break;
-    /*case '/':
-      result = division(operand1, operand2);
-      break;*/
     case 'p':
       result = power(operand1, operand2);
       break;
