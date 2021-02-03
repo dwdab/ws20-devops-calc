@@ -1,4 +1,5 @@
 // performs an division of two parameters
-module.exports = function division(x, y) {
-  return x / y;
+module.exports = {
+  operator: '/',
+  fn: (x, y) => x / y,
 };
