@@ -1,3 +1,5 @@
-module.exports = function power(x, y) {
-  return x**y;
+module.exports = {
+  operator: 'p',
+  fn: (x, y) => x**y,
 };
+

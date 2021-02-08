@@ -3,9 +3,9 @@ const subtraction = require('./operations/subtraction');
 const multiplication = require('./operations/multiplication');
 const division = require('./operations/division');
 const modulo = require('./operations/modulo');
-const power = require('./operations/power'); // TODO: Kevin
+const power = require('./operations/power');
 
-const operations = [addition, subtraction, multiplication, division, modulo];
+const operations = [addition, subtraction, multiplication, division, modulo, power];
 
 
 /**
@@ -25,11 +25,6 @@ calculateSetOperation();
 
 // selects the correct case and performs the correct calculation depending on the operands
 function calculateSetOperation() {
-  switch (operator) {
-    case 'p':
-      result = power(operand1, operand2);
-      break;
-  }
 
   const operation = operations.find((e) => e.operator === operator);
 
