@@ -18,8 +18,7 @@
   "homepage": "https://github.com/dwdab/ws20-devops-calc#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "ws20-devops-calc-addition": "github:dwdab/ws20-devops-calc-addition",
-    "ws20-devops-calc-modulo": "github:gh03ty/dw20-devops-calc-modulo",
+    "ws20-devops-calc-addition": "github:dwdab/ws20-devops-calc-addition#1.2.0",
     "ws20-devops-calc-power": "github:Qubus0/ws20-devops-calc-power"
   }
 }
