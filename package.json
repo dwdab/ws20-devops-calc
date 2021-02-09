@@ -20,6 +20,6 @@
     "colors": "^1.4.0",
     "ws20-devops-calc-addition": "github:dwdab/ws20-devops-calc-addition#1.0.0",
     "ws20-devops-calc-power": "github:Qubus0/ws20-devops-calc-power",
-    "ws20-devops-calc-division": "git@github.com:FearZee/ws20-devops-calc-division.git"
+    "ws20-devops-calc-division": "github:FearZee/ws20-devops-calc-division"
   }
 }
