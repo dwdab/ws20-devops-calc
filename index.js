@@ -1,10 +1,10 @@
-const colors = require('colors/safe');
+//const colors = require('colors/safe');
 
 const addition = require('ws20-devops-calc-addition');
+const division = require('ws20-devops-calc-division');
 
 const subtraction = require('./operations/subtraction');
 const multiplication = require('./operations/multiplication');
-const division = require('./operations/division');
 const modulo = require('./operations/modulo');
 const power = require('./operations/power');
 
@@ -22,7 +22,7 @@ let operand2 = Number(arguments[1]);
 let operator = arguments[2];
 let result = null;
 
-console.log(colors.rainbow('Calculating:'), operand1, operand2, operator);
+console.log('Calculating:', operand1, operand2, operator);
 
 calculateSetOperation();
 
