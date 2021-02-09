@@ -1,0 +1,23 @@
+{
+  "name": "ws20-devops-calc",
+  "version": "1.0.0",
+  "description": "Die umgekehrte polnische Notation (UPN) oder reverse polnische Notation englisch reverse Polish notation (kurz RPN), auch Postfixnotation genannt, ist eine von der polnischen Notation abgeleitete Schreibweise bzw. Eingabelogik für die Anwendung von Operationen. Bei der umgekehrten polnischen Notation werden zunächst die Operanden niedergeschrieben bzw. eingegeben und danach der darauf anzuwendende Operator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwdab/ws20-devops-calc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwdab/ws20-devops-calc/issues"
+  },
+  "homepage": "https://github.com/dwdab/ws20-devops-calc#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ws20-devops-calc-addition": "github:dwdab/ws20-devops-calc-addition"
+  }
+}
