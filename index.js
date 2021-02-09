@@ -3,13 +3,12 @@ const colors = require('colors/safe');
 const addition = require('ws20-devops-calc-addition');
 const power = require('ws20-devops-calc-power/power');
 const division = require('ws20-devops-calc-division');
+const modulo = require('ws20-devops-calc-modulo');
 
 const subtraction = require('./operations/subtraction');
 const multiplication = require('./operations/multiplication');
-const modulo = require('./operations/modulo');
 
 const operations = [addition, subtraction, multiplication, division, modulo, power];
-
 
 /**
  * Reverse Polish Notation Calculator
