@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dwdab/ws20-devops-calc#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "ws20-devops-calc-addition": "github:dwdab/ws20-devops-calc-addition"
+    "ws20-devops-calc-addition": "github:dwdab/ws20-devops-calc-addition",
+    "ws20-devops-calc-multiplication": "github:ShinyKampfkeule/ws20-devops-calc-multiplication"
   }
 }
