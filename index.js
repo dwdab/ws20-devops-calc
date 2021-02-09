@@ -1,7 +1,6 @@
 const colors = require('colors/safe');
 
 const addition = require('ws20-devops-calc-addition');
-const division = require('ws20-devops-calc-division');
 const power = require('ws20-devops-calc-power/power');
 const division = require('ws20-devops-calc-division');
 
