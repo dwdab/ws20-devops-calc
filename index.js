@@ -1,12 +1,12 @@
 const colors = require('colors/safe');
 
 const addition = require('ws20-devops-calc-addition');
+const power = require('ws20-devops-calc-power/power');
 
 const subtraction = require('./operations/subtraction');
 const multiplication = require('./operations/multiplication');
 const division = require('./operations/division');
 const modulo = require('./operations/modulo');
-const power = require('./operations/power');
 
 const operations = [addition, subtraction, multiplication, division, modulo, power];
 
