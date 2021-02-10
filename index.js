@@ -4,10 +4,9 @@ const addition = require('ws20-devops-calc-addition');
 const power = require('ws20-devops-calc-power/power');
 const modulo = require('ws20-devops-calc-modulo');
 const multiplication = require('ws20-devops-calc-multiplication');
+const division = require('ws20-devops-calc-division');
 
 const subtraction = require('./operations/subtraction');
-const division = require('./operations/division');
-
 
 const operations = [addition, subtraction, multiplication, division, modulo, power];
 
