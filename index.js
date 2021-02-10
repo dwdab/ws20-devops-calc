@@ -14,11 +14,11 @@ const operations = [addition, subtraction, multiplication, division, modulo, pow
  * Reverse Polish Notation Calculator
  */
 
-let arguments = process.argv.slice(2);
+let args = process.argv.slice(2);
 
-let operand1 = Number(arguments[0]);
-let operand2 = Number(arguments[1]);
-let operator = arguments[2];
+let operand1 = Number(args[0]);
+let operand2 = Number(args[1]);
+let operator = args[2];
 let result = null;
 
 console.log(colors.rainbow('Calculating:'), operand1, operand2, operator);
