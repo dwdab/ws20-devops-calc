@@ -10,7 +10,6 @@ const modulo = require('./operations/modulo');
 
 const operations = [addition, subtraction, multiplication, division, modulo, power];
 
-
 /**
  * Reverse Polish Notation Calculator
  */
