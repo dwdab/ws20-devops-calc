@@ -13,13 +13,11 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: |
-          IMAGE="ghcr.io/dwdab/mycalc:latest"
+          REF_NAME=$(echo ${GITHUB_REF#refs/*/} | sed -e 's/^v//')
+          TAG=$(printf ${REF_NAME} | tr -c '[[:alnum:]]._-' '_')
+          if [[ "${REF_NAME}" == "main" || "${REF_NAME}" == "master" ]]; then TAG=latest; fi
+
+          IMAGE="ghcr.io/dwdab/mycalc:$TAG"
           echo "$CR_PASSWORD" | docker login ghcr.io -u $CR_USER --password-stdin
           docker build -t "$IMAGE" .
           docker push "$IMAGE"
-
-  foo:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: ls -l
