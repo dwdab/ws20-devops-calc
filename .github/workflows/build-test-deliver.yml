@@ -2,13 +2,18 @@ on:
   push:
 
 jobs:
-  lint:
+  build-test-deliver:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
       - run: npm run lint
       - run: |
-          IMGAGE="ghcr.io/dwdab/mycalc:latest"
+          IMAGE="ghcr.io/dwdab/mycalc:latest"
           docker build -t "$IMAGE" .
           docker push "$IMAGE"
+
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ls -l
